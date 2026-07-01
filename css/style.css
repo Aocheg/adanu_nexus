@@ -1,0 +1,9 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;line-height:1.7;color:#222}
+.container{width:90%;max-width:1200px;margin:auto}
+header{background:#0f172a;color:#fff;padding:20px}
+nav a{color:#fff;text-decoration:none;margin:0 8px}
+.hero{padding:80px 20px;text-align:center;background:#f8fafc}
+main{padding:40px 0}
+footer{background:#0f172a;color:#fff;text-align:center;padding:20px}
