@@ -38,21 +38,50 @@
 
 <h3>Contact Details</h3>
 <div class="contact-details">
-<p><strong>Email:</strong> oche8004@gmail.com</p>
-<p><strong>Phone:</strong> +234 (811) 786-7129</p>
+<p><strong>Email:</strong> hello@adanunexus.example</p>
+<p><strong>Phone:</strong> +234 (000) 000-0000</p>
 <p><strong>Hours:</strong> Monday–Friday, 9:00 AM–5:00 PM</p>
 </div>
 
-<h3>What Are You Interested In?</h3>
-<ul>
-<li>Software development or website project</li>
-<li>Graphic design or branding work</li>
-<li>Nursing care for yourself or a family member</li>
-<li>Mental health counseling or a workplace wellness program</li>
-</ul>
-<p>Mention which of these applies when you reach out, along with a short description of what you need, and we'll connect you with the right team member.</p>
-<!-- <p><em></em></p> -->
-<a class="btn" href="mailto:oche8004@gmail.com">Email Us</a>
+<h3>Send a Request</h3>
+<p>Fill out the form below and it will be sent straight to our inbox — we'll get back to you to schedule next steps.</p>
+
+<form class="request-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label for="name">Full name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email address</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone number (optional)</label>
+<input type="tel" id="phone" name="phone">
+
+<label for="service">Service you're interested in</label>
+<select id="service" name="service" required>
+<option value="">Select one</option>
+<option value="Software Development">Software Development</option>
+<option value="Graphic Design">Graphic Design</option>
+<option value="Nursing Care">Nursing Care</option>
+<option value="Mental Health">Mental Health</option>
+<option value="Other / Not sure">Other / Not sure</option>
+</select>
+
+<label for="message">Tell us what you need</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<input type="hidden" name="_subject" value="New request from AdanuNexus website">
+<button type="submit" class="btn">Submit Request</button>
+</form>
+
+<p><em>Note: replace YOUR_FORM_ID in the form's action URL with your own Formspree endpoint, and update the email, phone number and hours above, before publishing.</em></p>
+
+<h3>Or Book a Time Directly</h3>
+<p>Prefer to pick a specific date and time instead? Use the calendar below to schedule a consultation — you'll both get an automatic confirmation and calendar invite.</p>
+
+<div class="calendly-inline-widget" data-url="https://calendly.com/aga355462/30min" style="min-width:320px;height:650px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<p><em>Note: replace YOUR-CALENDLY-USERNAME/consultation above with your real Calendly event link before publishing.</em></p>
 
 </main>
 <footer>
