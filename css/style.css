@@ -41,19 +41,14 @@ header{
   padding:26px 0 18px;
   border-bottom:4px solid var(--gold);
 }
-.header-inner{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.nexus-mark{color:var(--gold-soft);flex-shrink:0}
-header h1{
-  font-size:1.7rem;
-  color:#fff;
-  letter-spacing:.02em;
-}
-header p{
+.header-inner{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-bottom:14px}
+.header-logo{height:52px;width:auto;display:block}
+.header-tagline{
   color:#B9C7C3;
   font-size:.88rem;
-  margin-top:2px;
   font-style:italic;
   font-family:'Fraunces',Georgia,serif;
+  margin:0;
 }
 nav{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em}
 nav a{
@@ -167,7 +162,7 @@ body.page-contact{background:linear-gradient(180deg,#EFF3F2,#E6EDEB)}
 
 /* ===== Responsive ===== */
 @media (max-width:640px){
-  .header-inner{flex-direction:column;align-items:flex-start;gap:8px}
+  .header-logo{height:40px}
   .hero h2{font-size:1.8rem}
   nav a{margin-right:10px}
 }
