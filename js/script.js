@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();
   initSmoothScroll();
   initPortfolioFilters();
+  initContactForm();
 });
 
 /**
@@ -156,5 +157,101 @@ function initPortfolioFilters() {
         }
       });
     });
+  });
+}
+
+/**
+ * Interactive Contact Form Handling & WhatsApp Instant Send
+ */
+function initContactForm() {
+  const form = document.getElementById('consultationForm');
+  if (!form) return;
+
+  const statusBox = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
+  const whatsappBtn = document.getElementById('whatsappSubmitBtn');
+
+  // Check URL query parameters (e.g. if redirected from standard POST)
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('submitted') === 'true' && statusBox) {
+    statusBox.style.display = 'block';
+    statusBox.style.background = '#DEF7EC';
+    statusBox.style.border = '1px solid #31C48D';
+    statusBox.style.color = '#03543F';
+    statusBox.innerHTML = '<strong>&#9989; Request Received Successfully!</strong><br>Thank you! Your consultation request has been sent to <strong>oche8004@gmail.com</strong>. We will get back to you within 12 hours.';
+  }
+
+  // Handle WhatsApp alternative submit
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', () => {
+      const name = (document.getElementById('name')?.value || '').trim();
+      const email = (document.getElementById('email')?.value || '').trim();
+      const phone = (document.getElementById('phone')?.value || '').trim();
+      const service = (document.getElementById('service')?.value || '').trim();
+      const timeline = (document.getElementById('timeline')?.value || '').trim();
+      const message = (document.getElementById('message')?.value || '').trim();
+
+      if (!name || !message) {
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#FEF08A';
+          statusBox.style.border = '1px solid #EAB308';
+          statusBox.style.color = '#713F12';
+          statusBox.innerHTML = '&#9888;&#65039; Please enter at least your <strong>Full Name</strong> and <strong>Project Scope/Details</strong> before sending via WhatsApp.';
+        }
+        return;
+      }
+
+      const text = `Hello AdanuNexus, I would like to request a consultation:\n\n*Name:* ${name}\n*Email:* ${email || 'Not provided'}\n*Phone:* ${phone || 'Not provided'}\n*Service:* ${service || 'General Inquiry'}\n*Timeline:* ${timeline}\n*Scope/Details:* ${message}`;
+      const whatsappUrl = `https://wa.me/2348117867129?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  }
+
+  // Handle Form Submission via AJAX to formsubmit.co
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '&#9203; Sending Request...';
+
+    if (statusBox) {
+      statusBox.style.display = 'none';
+    }
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/oche8004@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#DEF7EC';
+          statusBox.style.border = '1px solid #31C48D';
+          statusBox.style.color = '#03543F';
+          statusBox.innerHTML = `<strong>&#9989; Consultation Request Sent Successfully!</strong><br>Thank you, ${data.name || 'there'}! Your request has been delivered to <strong>oche8004@gmail.com</strong>. We will review your requirements and reach out within 12 hours.<br><br>If your request is urgent, you can also <a href="https://wa.me/2348117867129" target="_blank" rel="noopener noreferrer" style="color: #03543F; font-weight: 700; text-decoration: underline;">chat directly on WhatsApp &rarr;</a>`;
+        }
+        form.reset();
+      } else {
+        // If formsubmit returns non-ok status, fall back to native submission
+        form.submit();
+      }
+    } catch (err) {
+      // In case of network glitch or adblock, submit normally
+      form.submit();
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+    }
   });
 }

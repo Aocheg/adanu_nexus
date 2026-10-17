@@ -216,11 +216,14 @@
 
       <!-- Right Column: Interactive Consultation Request Form -->
       <div>
-        <form class="request-form" action="https://formspree.io/f/mnnpzqvd" method="POST">
+        <form class="request-form" id="consultationForm" action="https://formsubmit.co/oche8004@gmail.com" method="POST">
           <h4 style="font-size: 1.25rem; color: var(--primary-dark); margin: 0 0 6px;">Send Us a Message</h4>
           <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0 0 16px;">
             Fill out your details below and our team will get in touch to schedule a free 20-minute discovery call.
           </p>
+
+          <!-- Status Message Alert Box -->
+          <div id="formStatus" style="display: none; padding: 14px 18px; border-radius: var(--radius-sm); font-size: 0.92rem; line-height: 1.5; margin-bottom: 14px;"></div>
 
           <div>
             <label for="name">Full Name *</label>
@@ -265,9 +268,17 @@
             <textarea id="message" name="message" rows="5" placeholder="Please describe your requirements, key goals, or patient care details..." required></textarea>
           </div>
 
-          <input type="hidden" name="_subject" value="New Inquiry from AdanuNexus Website">
-          <button type="submit" class="btn btn-gold btn-block">Submit Consultation Request &rarr;</button>
-          <span style="font-size: 0.76rem; color: var(--ink-muted); text-align: center; display: block;">&#128274; Your information is strictly confidential and never shared.</span>
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Consultation Request | AdanuNexus">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 6px;">
+            <button type="submit" id="submitBtn" class="btn btn-gold btn-block">Submit Consultation Request &rarr;</button>
+            <button type="button" id="whatsappSubmitBtn" class="btn btn-secondary btn-block">&#128172; Send via WhatsApp Instead</button>
+          </div>
+
+          <span style="font-size: 0.76rem; color: var(--ink-muted); text-align: center; display: block; margin-top: 4px;">&#128274; Your information is strictly confidential and delivered directly to oche8004@gmail.com.</span>
         </form>
       </div>
     </div>
