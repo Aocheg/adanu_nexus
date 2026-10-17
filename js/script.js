@@ -212,6 +212,9 @@ function initContactForm() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    // Ensure action points to formsubmit, never formspree
+    form.setAttribute('action', 'https://formsubmit.co/oche8004@gmail.com');
+
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = '&#9203; Sending Request...';
@@ -233,7 +236,18 @@ function initContactForm() {
         body: JSON.stringify(data)
       });
 
-      if (response.ok) {
+      const result = await response.json().catch(() => ({}));
+
+      if (result.message && result.message.toLowerCase().includes('activation')) {
+        // First-time activation needed
+        if (statusBox) {
+          statusBox.style.display = 'block';
+          statusBox.style.background = '#FEF3C7';
+          statusBox.style.border = '1px solid #F59E0B';
+          statusBox.style.color = '#92400E';
+          statusBox.innerHTML = `<strong>&#128231; Almost Done! One-Time Activation Needed:</strong><br>FormSubmit has just sent a confirmation email to <strong>oche8004@gmail.com</strong>.<br><br>&#128073; Please check your inbox (or Spam folder) and click <strong>"Activate Form"</strong>. Once activated, every future consultation request will land directly in your inbox!`;
+        }
+      } else if (response.ok || result.success === 'true' || result.success === true) {
         if (statusBox) {
           statusBox.style.display = 'block';
           statusBox.style.background = '#DEF7EC';
@@ -243,11 +257,11 @@ function initContactForm() {
         }
         form.reset();
       } else {
-        // If formsubmit returns non-ok status, fall back to native submission
+        // Fall back to native submission
         form.submit();
       }
     } catch (err) {
-      // In case of network glitch or adblock, submit normally
+      // In case of adblocker or network error, submit normally
       form.submit();
     } finally {
       submitBtn.disabled = false;
