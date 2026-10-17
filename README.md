@@ -96,5 +96,7 @@ The codebase is 100% static (HTML, CSS, JS, assets) and requires no build step (
 
 - **Founder & Lead Maintainer:** ADANU OCHE GABRIEL
 - **Email:** [oche8004@gmail.com](mailto:oche8004@gmail.com)
+- **WhatsApp:** [+234 811 786 7129](https://wa.me/2348117867129) (08117867129)
+- **Phone / Call:** [+234 703 022 8842](tel:+2347030228842) (07030228842)
 - **Repository:** [https://github.com/Aocheg/adanu_nexus.git](https://github.com/Aocheg/adanu_nexus.git)
 - **Copyright:** &copy; 2026 AdanuNexus. All rights reserved.
