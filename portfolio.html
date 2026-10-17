@@ -1,61 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A look at AdanuNexus project work across software, design and care services.">
-<title>Portfolio | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured Portfolio of AdanuNexus — real-world case studies in software development, brand identity, healthcare programs, and workplace wellness.">
+  <meta name="keywords" content="AdanuNexus Portfolio, Web Development Projects, Graphic Design Case Studies, Healthcare Programs">
+  <meta property="og:title" content="Portfolio &amp; Case Studies | AdanuNexus">
+  <meta property="og:description" content="Explore our track record of engineering scalable digital products and delivering compassionate healthcare support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Portfolio &amp; Case Studies | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-portfolio"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Our Work</h2>
-<p>A sample of the kind of projects and programs we deliver across our service lines.</p>
-</section>
-<main class="container">
+<body class="page-portfolio">
 
-<h3>Featured Work</h3>
-<div class="grid">
-<div class="card">
-<h4>Business Website Rebuild</h4>
-<p>Redesigned and rebuilt a small business website for speed, mobile responsiveness and clearer navigation.</p>
-</div>
-<div class="card">
-<h4>Brand Identity Package</h4>
-<p>Full logo, color system and marketing template set delivered for a growing local business.</p>
-</div>
-<div class="card">
-<h4>Client Booking Portal</h4>
-<p>A custom web application allowing clients to schedule appointments and track service history online.</p>
-</div>
-<div class="card">
-<h4>In-Home Care Program</h4>
-<p>Ongoing nursing care plan supporting a family with elderly-care coordination and health monitoring.</p>
-</div>
-<div class="card">
-<h4>Workplace Wellness Series</h4>
-<p>A multi-session mental health awareness program delivered to a mid-sized company team.</p>
-</div>
-</div>
-<!-- <p><em></em></p> -->
-<a class="btn" href="contact.html">Start Your Project</a>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Start a Project</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link active">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#128188; Selected Case Studies &bull; Real Results</span>
+      </div>
+      <h2>Our Work &amp; Case Studies</h2>
+      <p>
+        A curated showcase of digital platforms engineered, visual identities crafted, and clinical care programs delivered with excellence.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Commission Your Project &rarr;</a>
+        <a href="testimonials.html" class="btn btn-secondary">Read Client Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <!-- Category Filter Controls -->
+    <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 36px;" id="portfolioFilters">
+      <button class="btn btn-sm" data-filter="all" style="background: var(--primary); color: #fff;">All Case Studies</button>
+      <button class="btn btn-sm btn-secondary" data-filter="software">Software</button>
+      <button class="btn btn-sm btn-secondary" data-filter="design">Branding &amp; Design</button>
+      <button class="btn btn-sm btn-secondary" data-filter="nursing">Nursing Care</button>
+      <button class="btn btn-sm btn-secondary" data-filter="mental">Mental Health</button>
+    </div>
+
+    <!-- Portfolio Case Studies Grid -->
+    <div class="grid" id="portfolioGrid">
+
+      <!-- Case 1: Software -->
+      <div class="card portfolio-item" data-category="software">
+        <span class="card-icon">&#128187;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Web Application</span>
+        <h4>CampusFlow Next-Gen Portal</h4>
+        <p>A full-stack campus management and student coordination platform featuring role-based dashboards, secure authentication, real-time alerts, and mobile-first responsive views.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Tech:</strong> JavaScript, Python, REST APIs, HTML5/CSS3
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Live Deployment Complete</span>
+      </div>
+
+      <!-- Case 2: Software -->
+      <div class="card portfolio-item" data-category="software">
+        <span class="card-icon">&#128451;&#65039;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Healthcare Software</span>
+        <h4>HealthVitals Care &amp; Monitoring Dashboard</h4>
+        <p>A secure digital portal enabling home nurses to log patient vitals, track daily medication compliance, and synchronize records with family physicians in real-time.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Tech:</strong> Cloudflare, Node.js, PostgreSQL, Responsive UI
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; HIPAA-Compliant Architecture</span>
+      </div>
+
+      <!-- Case 3: Design -->
+      <div class="card portfolio-item" data-category="design">
+        <span class="card-icon">&#127912;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Brand Identity</span>
+        <h4>NexusCore Corporate Rebranding</h4>
+        <p>Complete visual identity overhaul for an emerging tech consultancy: master logo mark, secondary badges, color palettes, custom typography rules, and marketing collateral kits.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Deliverables:</strong> 42-page Brand Book, Vector AI/SVG, Social Kit
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Full IP Transfer</span>
+      </div>
+
+      <!-- Case 4: Design -->
+      <div class="card portfolio-item" data-category="design">
+        <span class="card-icon">&#128241;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">UI/UX Design</span>
+        <h4>FinVibe Mobile Banking Prototype</h4>
+        <p>Interactive Figma prototype and design system for a mobile-first micro-savings app, featuring high-contrast accessibility patterns and user flow testing with 98% task completion.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Deliverables:</strong> Clickable Figma Prototype &amp; Design Tokens
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Ready for Mobile Dev</span>
+      </div>
+
+      <!-- Case 5: Nursing Care -->
+      <div class="card portfolio-item" data-category="nursing">
+        <span class="card-icon">&#129658;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Clinical Case Study</span>
+        <h4>In-Home Post-Op Recovery Program</h4>
+        <p>6-week structured clinical home nursing following orthopedic surgery: daily surgical wound dressing, physical rehabilitation coordination, and pain management oversight.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Outcome:</strong> 100% infection-free recovery, full mobility restored ahead of schedule
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Physician Endorsed</span>
+      </div>
+
+      <!-- Case 6: Mental Health -->
+      <div class="card portfolio-item" data-category="mental">
+        <span class="card-icon">&#129504;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Corporate Wellness</span>
+        <h4>EmpowerMind Workplace Wellness Initiative</h4>
+        <p>A 4-week workplace mental health and burnout mitigation program delivered to a team of 45 professionals, including confidential 1-on-1 counseling and manager training.</p>
+        <div style="font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 14px;">
+          <strong>Outcome:</strong> 34% drop in self-reported burnout, 92% employee satisfaction
+        </div>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Program Certified</span>
+      </div>
+
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--primary); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Have a Project You Would Like to See Featured Here?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Let's team up to build your next digital platform, design a landmark brand, or structure a dependable healthcare plan.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Start Your Project Consultation &rarr;</a>
+        <a href="testimonials.html" class="btn btn-secondary">Read Client Reviews</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

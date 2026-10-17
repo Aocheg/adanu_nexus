@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
   initHeaderScroll();
   initSmoothScroll();
+  initPortfolioFilters();
 });
 
 /**
@@ -121,6 +122,39 @@ function initSmoothScroll() {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
       }
+    });
+  });
+}
+
+/**
+ * Portfolio category filtering
+ */
+function initPortfolioFilters() {
+  const filterButtons = document.querySelectorAll('#portfolioFilters button');
+  const items = document.querySelectorAll('.portfolio-item');
+  if (!filterButtons.length || !items.length) return;
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Update button active styling
+      filterButtons.forEach(b => {
+        b.style.background = '#FFFFFF';
+        b.style.color = 'var(--primary-dark)';
+      });
+      btn.style.background = 'var(--primary)';
+      btn.style.color = '#FFFFFF';
+
+      // Show/hide portfolio items
+      items.forEach(item => {
+        const category = item.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   });
 }

@@ -1,82 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Get in touch with AdanuNexus for software, design, nursing care or mental health services.">
-<title>Contact | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact AdanuNexus — schedule a consultation for software engineering, graphic design, nursing care, or mental health counseling.">
+  <meta name="keywords" content="Contact AdanuNexus, Hire Software Developer, Hire Graphic Designer, Book Nurse, Mental Health Consultation">
+  <meta property="og:title" content="Contact Us | AdanuNexus">
+  <meta property="og:description" content="Ready to discuss your project or healthcare needs? Contact our team today for a free discovery consultation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Contact Us | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-contact"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Get in Touch</h2>
-<p>Tell us what you need — we'll point you to the right specialist.</p>
-</section>
-<main class="container">
+<body class="page-contact">
 
-<h3>Contact Details</h3>
-<div class="contact-details">
-<p><strong>Email:</strong> hello@adanunexus.example</p>
-<p><strong>Phone:</strong> +234 (000) 000-0000</p>
-<p><strong>Hours:</strong> Monday–Friday, 9:00 AM–5:00 PM</p>
-</div>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Send a Request</h3>
-<p>Fill out the form below and it will be sent straight to our inbox — we'll get back to you to schedule next steps.</p>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
 
-<form class="request-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-<label for="name">Full name</label>
-<input type="text" id="name" name="name" required>
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
 
-<label for="email">Email address</label>
-<input type="email" id="email" name="email" required>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
 
-<label for="phone">Phone number (optional)</label>
-<input type="tel" id="phone" name="phone">
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Book Consultation</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<label for="service">Service you're interested in</label>
-<select id="service" name="service" required>
-<option value="">Select one</option>
-<option value="Software Development">Software Development</option>
-<option value="Graphic Design">Graphic Design</option>
-<option value="Nursing Care">Nursing Care</option>
-<option value="Mental Health">Mental Health</option>
-<option value="Other / Not sure">Other / Not sure</option>
-</select>
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
-<label for="message">Tell us what you need</label>
-<textarea id="message" name="message" rows="5" required></textarea>
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
 
-<input type="hidden" name="_subject" value="New request from AdanuNexus website">
-<button type="submit" class="btn">Submit Request</button>
-</form>
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
 
-<p><em>Note: replace YOUR_FORM_ID in the form's action URL with your own Formspree endpoint, and update the email, phone number and hours above, before publishing.</em></p>
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link active">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Get in Touch</a>
+    </div>
+  </aside>
 
-<h3>Or Book a Time Directly</h3>
-<p>Prefer to pick a specific date and time instead? Use the calendar below to schedule a consultation — you'll both get an automatic confirmation and calendar invite.</p>
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#128172; We Are Here to Help</span>
+      </div>
+      <h2>Let's Start a Conversation</h2>
+      <p>
+        Whether you have a technical project to build, a brand to design, or require compassionate healthcare
+        and nursing support — our team is ready to assist you.
+      </p>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Fast</strong> Response Within 12 Hours</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Free</strong> Initial 20-Min Discovery</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Strict</strong> Confidentiality Assured</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/aga355462/30min" style="min-width:320px;height:650px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
 
-<p><em>Note: replace YOUR-CALENDLY-USERNAME/consultation above with your real Calendly event link before publishing.</em></p>
+    <div class="contact-layout">
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+      <!-- Left Column: Contact Channels & Operating Details -->
+      <div class="contact-details">
+        <h4>Direct Channels</h4>
+        <p style="color: var(--ink-muted); font-size: 0.92rem; margin-bottom: 24px;">
+          Reach out through any of our channels. We prioritize urgent clinical inquiries and technical project requests.
+        </p>
+
+        <!-- Channel 1: Email -->
+        <div class="contact-channel">
+          <div class="channel-icon">&#9993;&#65039;</div>
+          <div class="channel-info">
+            <strong>Official Email</strong>
+            <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a>
+            <p style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 2px;">Direct inbox monitored daily</p>
+          </div>
+        </div>
+
+        <!-- Channel 2: WhatsApp & Phone -->
+        <div class="contact-channel">
+          <div class="channel-icon">&#128172;</div>
+          <div class="channel-info">
+            <strong>WhatsApp &amp; Calls</strong>
+            <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">+234 (800) 000-0000</a>
+            <p style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 2px;">Quick responses for consultations</p>
+          </div>
+        </div>
+
+        <!-- Channel 3: Business Hours -->
+        <div class="contact-channel">
+          <div class="channel-icon">&#128337;</div>
+          <div class="channel-info">
+            <strong>Operating Hours</strong>
+            <p>Monday &ndash; Saturday: 8:00 AM &ndash; 6:00 PM (WAT)</p>
+            <p style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 2px;">Emergency care coordination on call</p>
+          </div>
+        </div>
+
+        <!-- Channel 4: Coverage Area -->
+        <div class="contact-channel">
+          <div class="channel-icon">&#127758;</div>
+          <div class="channel-info">
+            <strong>Service Coverage</strong>
+            <p>Digital Services: Worldwide (Remote)</p>
+            <p style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 2px;">Nursing &amp; Clinical: In-Home &amp; Regional</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px; padding: 20px; background: var(--surface-alt); border-radius: var(--radius-sm); border-left: 4px solid var(--accent);">
+          <strong style="color: var(--primary-dark); font-size: 0.9rem; display: block; margin-bottom: 6px;">Need an Immediate Reply?</strong>
+          <p style="font-size: 0.86rem; color: var(--ink-soft); margin: 0 0 12px;">
+            Message us directly on WhatsApp with your project scope or nursing requirements for a rapid reply.
+          </p>
+          <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-gold">&#128172; Chat Now on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Consultation Request Form -->
+      <div>
+        <form class="request-form" action="https://formspree.io/f/mnnpzqvd" method="POST">
+          <h4 style="font-size: 1.25rem; color: var(--primary-dark); margin: 0 0 6px;">Send Us a Message</h4>
+          <p style="font-size: 0.88rem; color: var(--ink-muted); margin: 0 0 16px;">
+            Fill out your details below and our team will get in touch to schedule a free 20-minute discovery call.
+          </p>
+
+          <div>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Gabriel Oche" required>
+          </div>
+
+          <div>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required>
+          </div>
+
+          <div>
+            <label for="phone">Phone / WhatsApp Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +234 801 234 5678">
+          </div>
+
+          <div>
+            <label for="service">Service Line of Interest *</label>
+            <select id="service" name="service" required>
+              <option value="">-- Please select a service --</option>
+              <option value="Software Development">Software Development (Web App, Website, API)</option>
+              <option value="Graphic Design">Graphic Design &amp; Brand Identity</option>
+              <option value="Nursing Care">In-Home or Clinical Nursing Care</option>
+              <option value="Mental Health">Mental Health Counseling &amp; Wellness</option>
+              <option value="Dual Need">Interdisciplinary (Tech + Healthcare)</option>
+              <option value="Other">General Inquiry / Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="timeline">Expected Timeline / Urgency</label>
+            <select id="timeline" name="timeline">
+              <option value="Immediate">Immediate / Urgent Need</option>
+              <option value="Within 2 Weeks" selected>Within 2 Weeks</option>
+              <option value="Within 1 Month">Within 1 Month</option>
+              <option value="Planning Phase">Just Exploring / Planning Ahead</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Project Scope or Care Details *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Please describe your requirements, key goals, or patient care details..." required></textarea>
+          </div>
+
+          <input type="hidden" name="_subject" value="New Inquiry from AdanuNexus Website">
+          <button type="submit" class="btn btn-gold btn-block">Submit Consultation Request &rarr;</button>
+          <span style="font-size: 0.76rem; color: var(--ink-muted); text-align: center; display: block;">&#128274; Your information is strictly confidential and never shared.</span>
+        </form>
+      </div>
+    </div>
+
+    <!-- Calendar Booking Section -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Direct Scheduling</span>
+      <h3 class="section-title">Schedule a 30-Minute Video Consultation</h3>
+      <p class="section-sub">Pick a date and time that fits your schedule for an online consultation via Google Meet or Zoom.</p>
+    </div>
+
+    <div style="background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 16px; overflow: hidden; box-shadow: var(--shadow-sm); max-width: 900px; margin: 0 auto 40px;">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/aga355462/30min" style="min-width:320px;height:650px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
