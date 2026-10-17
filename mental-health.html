@@ -1,51 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Counseling, advocacy and workplace wellness programs from AdanuNexus.">
-<title>Mental Health | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mental Health Counseling & Advocacy by AdanuNexus — confidential individual therapy, corporate wellness workshops, and community mental health programs.">
+  <meta name="keywords" content="Mental Health, Counseling, Therapy, Wellness, Workplace Mental Health, AdanuNexus">
+  <meta property="og:title" content="Mental Health & Wellbeing Practice | AdanuNexus">
+  <meta property="og:description" content="Safe, stigma-free counseling, corporate wellness workshops, and mental health advocacy built around empathy and respect.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Mental Health &amp; Wellbeing Practice | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-mental"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Mental Health & Wellbeing</h2>
-<p>Support for individuals, families and workplaces — because mental health is health.</p>
-</section>
-<main class="container">
+<body class="page-mental">
 
-<h3>Our Programs</h3>
-<ul>
-<li><strong>Individual Counseling</strong> — one-on-one sessions with licensed practitioners.</li>
-<li><strong>Family & Group Support</strong> — guided sessions for shared challenges.</li>
-<li><strong>Workplace Wellness</strong> — mental health training and support programs for teams.</li>
-<li><strong>Community Advocacy</strong> — awareness campaigns and reduced-stigma initiatives.</li>
-<li><strong>Referral Support</strong> — connecting clients to psychiatric care when needed.</li>
-</ul>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Our Philosophy</h3>
-<p>We believe mental health support should be practical, judgment-free and easy to access. Every session is confidential, and every plan is built around what the individual actually needs — not a one-size-fits-all program.</p>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
 
-<h3>If You Need Support Now</h3>
-<p>If you or someone you know is in crisis, please contact your local emergency services or a crisis helpline immediately. This page is for general information and does not replace emergency care.</p>
-<a class="btn" href="contact.html">Book a Confidential Session</a>
+        <!-- Services Dropdown (Active) -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle active" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item" style="background: var(--surface-alt);">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Book Session</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent active">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Book Session</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#129504; Stigma-Free &bull; Confidential &bull; Evidence-Based</span>
+      </div>
+      <h2>Mental Health &amp; Psychological Wellbeing</h2>
+      <p>
+        Compassionate, judgment-free mental health support for individuals, corporate teams, and communities.
+        Because mental wellness is the foundation of a healthy, fulfilling life.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Book a Confidential Session &rarr;</a>
+        <a href="#programs-grid" class="btn btn-secondary">Explore Wellness Programs</a>
+      </div>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>100%</strong> Confidential Sessions</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Virtual &amp; In-Person</strong> Options</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Licensed</strong> Counselors</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Empathetic</strong> Atmosphere</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container" id="programs-grid">
+
+    <div class="section-head">
+      <span class="section-tag">Wellbeing Practice</span>
+      <h3 class="section-title">Our Mental Health Programs</h3>
+      <p class="section-sub">
+        We provide personalized counseling pathways tailored to individual needs, workplace realities, and cultural contexts.
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- 1. Individual Counseling -->
+      <div class="card">
+        <span class="card-icon">&#128100;</span>
+        <h4>Individual Therapy &amp; Counseling</h4>
+        <p>Private, one-on-one sessions addressing anxiety, depression, workplace burnout, grief, life transitions, and self-esteem in a safe therapeutic environment.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Confidential Safe Space</span>
+      </div>
+
+      <!-- 2. Workplace Wellness -->
+      <div class="card">
+        <span class="card-icon">&#128188;</span>
+        <h4>Corporate &amp; Workplace Wellness</h4>
+        <p>Mental health training workshops for organizations, executive stress management, employee assistance consulting, and burnout prevention strategies.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Team Resilience</span>
+      </div>
+
+      <!-- 3. Youth & Student Support -->
+      <div class="card">
+        <span class="card-icon">&#127891;</span>
+        <h4>Youth &amp; Student Guidance</h4>
+        <p>Specialized emotional support for young adults dealing with academic pressure, career uncertainty, peer stress, and emotional regulation skills.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Academic &amp; Life Guidance</span>
+      </div>
+
+      <!-- 4. Family & Relationship Dynamics -->
+      <div class="card">
+        <span class="card-icon">&#128106;</span>
+        <h4>Family &amp; Relationship Dynamics</h4>
+        <p>Facilitated discussions helping families navigate communication breakdowns, caregiver fatigue, grief, and interpersonal conflict with mutual understanding.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Constructive Dialogue</span>
+      </div>
+
+      <!-- 5. Community Advocacy -->
+      <div class="card">
+        <span class="card-icon">&#127757;</span>
+        <h4>Community Stigma Reduction</h4>
+        <p>Public awareness seminars, school outreach initiatives, and digital campaigns dedicated to breaking taboos surrounding mental health in Nigerian communities.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Educational Advocacy</span>
+      </div>
+
+      <!-- 6. Crisis Triage & Referrals -->
+      <div class="card">
+        <span class="card-icon">&#128222;</span>
+        <h4>Specialist Referral Network</h4>
+        <p>When clinical psychiatric evaluation or medical intervention is required, we provide seamless, compassionate referral coordination to accredited institutions.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Accredited Network</span>
+      </div>
+    </div>
+
+    <!-- Core Philosophy -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Therapeutic Ethics</span>
+      <h3 class="section-title">Our Practice Philosophy</h3>
+      <p class="section-sub">Mental health care is built upon unconditional respect, clinical evidence, and absolute privacy.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-box">
+        <h5>&#129505; Zero Judgment</h5>
+        <p>You are received with empathy and acceptance. Every lived experience is treated with profound respect and dignity.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128274; Absolute Privacy</h5>
+        <p>What is shared in session stays in session. We uphold strict confidentiality protocols adhering to ethical counseling bodies.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#129309; Client-Centered Goals</h5>
+        <p>We work collaboratively. You set your goals at your own pace, with actionable coping tools you can use every day.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128187; Flexible Access</h5>
+        <p>Attend sessions via secure encrypted video calls from anywhere in the world, or through arranged local appointments.</p>
+      </div>
+    </div>
+
+    <!-- Emergency Crisis Alert Banner -->
+    <div style="background: #FFF7ED; border: 2px solid #FDBA74; border-radius: var(--radius-md); padding: 26px 30px; margin: 50px 0 30px; display: flex; align-items: flex-start; gap: 18px;">
+      <span style="font-size: 2rem; line-height: 1;">&#9888;&#65039;</span>
+      <div>
+        <h4 style="color: #9A3412; font-size: 1.15rem; margin-bottom: 6px;">Need Urgent or Crisis Support?</h4>
+        <p style="color: #7C2D12; font-size: 0.94rem; margin: 0; line-height: 1.6;">
+          If you or someone you know is in immediate emotional distress, facing self-harm, or in medical crisis, please contact your nearest hospital emergency department or your local emergency hotline immediately. While AdanuNexus provides ongoing counseling and therapy, our scheduled sessions are not a substitute for 24/7 acute emergency medical intervention.
+        </p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: var(--radius-md); padding: 36px; margin: 40px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Take the First Step Toward Wellbeing</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Reaching out for help is an act of strength. Book a private, introductory 20-minute consultation with our wellness coordinator today.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Schedule a Private Session &rarr;</a>
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">&#128172; Confidential WhatsApp Inquiry</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

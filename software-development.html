@@ -1,57 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Custom software, web and business systems development by AdanuNexus.">
-<title>Software Development | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Custom Software Development by AdanuNexus — modern responsive web applications, business platforms, secure APIs, and database engineering.">
+  <meta name="keywords" content="Software Development, Web Applications, Web Design, JavaScript, Python, REST APIs, AdanuNexus">
+  <meta property="og:title" content="Software Development Practice | AdanuNexus">
+  <meta property="og:description" content="Engineering high-performing web platforms, scalable web applications, and business systems built for speed and security.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Software Development Practice | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-software"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Software Development</h2>
-<p>We design, build and maintain software that solves real business problems — from simple websites to full business systems.</p>
-</section>
-<main class="container">
+<body class="page-software">
 
-<h3>What We Build</h3>
-<ul>
-<li><strong>Business & Portfolio Websites</strong> — fast, responsive, SEO-ready sites like this one.</li>
-<li><strong>Web Applications</strong> — dashboards, booking systems, internal tools and client portals.</li>
-<li><strong>E-commerce</strong> — online stores with secure payments and inventory management.</li>
-<li><strong>Automation & Integrations</strong> — connecting the tools your business already uses.</li>
-<li><strong>Maintenance & Support</strong> — ongoing updates, bug fixes and hosting guidance.</li>
-</ul>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Our Process</h3>
-<ul>
-<li>Discovery call to understand your requirements and budget</li>
-<li>Wireframes and technical plan for your approval</li>
-<li>Development in short, visible sprints</li>
-<li>Testing across devices before launch</li>
-<li>Launch support and optional ongoing maintenance</li>
-</ul>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
 
-<h3>Technology We Use</h3>
-<p>We choose the right tool for each project rather than forcing one stack on every client — including modern JavaScript frameworks, standard HTML/CSS, common backend languages and reliable hosting platforms such as GitHub Pages, Netlify and Vercel for static sites.</p>
-<a class="btn" href="contact.html">Start a Project</a>
+        <!-- Services Dropdown (Active) -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle active" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item" style="background: var(--surface-alt);">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Start a Project</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent active">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Start a Project</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#128187; Engineering &bull; Architecture &bull; Web</span>
+      </div>
+      <h2>Software Development That Solves Business Challenges</h2>
+      <p>
+        We build robust, scalable web platforms, responsive business portals, and bespoke digital tools.
+        Clean code, intuitive architecture, and rock-solid performance — deployed to top cloud infrastructure.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Request Technical Scoping &rarr;</a>
+        <a href="portfolio.html" class="btn btn-secondary">Explore Code Portfolio</a>
+      </div>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>100%</strong> Responsive &amp; Mobile-First</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Modern</strong> Tech Stacks</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Clean</strong> Maintainable Code</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Fast</strong> Global Cloud Deployment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <div class="section-head">
+      <span class="section-tag">Solutions</span>
+      <h3 class="section-title">What We Build</h3>
+      <p class="section-sub">
+        Every digital solution is custom tailored to your business model, avoiding generic bloat and maximizing real-world speed.
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- 1. Custom Web Applications -->
+      <div class="card">
+        <span class="card-icon">&#9881;&#65039;</span>
+        <h4>Custom Web Applications</h4>
+        <p>Interactive single-page and multi-page web applications with real-time updates, dashboards, customer management, and role-based authentication.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; High Performance</span>
+      </div>
+
+      <!-- 2. Business Websites & Landing Pages -->
+      <div class="card">
+        <span class="card-icon">&#127760;</span>
+        <h4>Business &amp; Conversion Websites</h4>
+        <p>Ultra-fast static and dynamic marketing sites optimized for Google SEO, accessibility, mobile responsiveness, and high conversion rates.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; SEO-Ready</span>
+      </div>
+
+      <!-- 3. API & Backend Services -->
+      <div class="card">
+        <span class="card-icon">&#128279;</span>
+        <h4>API Development &amp; Integrations</h4>
+        <p>RESTful APIs, third-party webhook integrations, payment gateways (Paystack, Stripe, Flutterwave), and automated sync between databases.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Secure Endpoints</span>
+      </div>
+
+      <!-- 4. Database Architecture -->
+      <div class="card">
+        <span class="card-icon">&#128451;&#65039;</span>
+        <h4>Database Design &amp; Optimization</h4>
+        <p>Relational (PostgreSQL, MySQL) and document-based (MongoDB) database design, query indexing, data migrations, and backup configurations.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Data Integrity</span>
+      </div>
+
+      <!-- 5. E-Commerce Platforms -->
+      <div class="card">
+        <span class="card-icon">&#128722;</span>
+        <h4>E-Commerce &amp; Ordering Systems</h4>
+        <p>Custom product catalogs, shopping carts, inventory trackers, and seamless checkout flows tailored for Nigerian and global payment processors.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Fast Checkout</span>
+      </div>
+
+      <!-- 6. Maintenance & DevOps -->
+      <div class="card">
+        <span class="card-icon">&#128737;&#65039;</span>
+        <h4>Maintenance, Hosting &amp; CI/CD</h4>
+        <p>Zero-downtime deployment pipelines, Git version management, SSL certificate setups, speed optimization, and regular security updates.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; 99.9% Uptime Support</span>
+      </div>
+    </div>
+
+    <!-- Technology Stack Section -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Engineering Standards</span>
+      <h3 class="section-title">Technology We Use</h3>
+      <p class="section-sub">We select proven, modern technologies suited to your project scale and maintenance capabilities.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-box">
+        <h5>Frontend &amp; UI</h5>
+        <p>HTML5, Semantic CSS3, Vanilla ES6+ JavaScript, React, Tailwind CSS, responsive mobile-first architecture.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>Backend &amp; Logic</h5>
+        <p>Node.js, Express, Python, Django, REST APIs, microservices, and serverless edge functions.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>Storage &amp; Data</h5>
+        <p>PostgreSQL, MySQL, SQLite, MongoDB, Redis caching, structured relational data integrity.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>Hosting &amp; DevOps</h5>
+        <p>Vercel, Netlify, Render, GitHub Pages, Linux VPS (Ubuntu/Nginx), Docker, Cloudflare CDN.</p>
+      </div>
+    </div>
+
+    <!-- Development Process -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Quality Assurance</span>
+      <h3 class="section-title">Our Development Methodology</h3>
+      <p class="section-sub">How we ensure projects are delivered on time, within budget, and bug-free.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-icon">1</span>
+        <h4>Requirements &amp; Architecture</h4>
+        <p>We document exact user flows, database models, technical specifications, and milestones before writing code.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">2</span>
+        <h4>Agile Sprints</h4>
+        <p>Development is organized into visible stages. You preview live staging links and test features iteratively.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">3</span>
+        <h4>Rigorous Testing</h4>
+        <p>Mobile responsiveness testing, cross-browser compatibility, Lighthouse speed checks, and security audits.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">4</span>
+        <h4>Production Handover</h4>
+        <p>Deployment to your domain, complete source code handover on GitHub, and 30-day post-launch warranty.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--primary); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Have a Software Project in Mind?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Whether you are starting from a blank sheet of paper or upgrading an existing website, our engineers are ready to build a reliable solution.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Book a Free Technical Discovery &rarr;</a>
+        <a href="portfolio.html" class="btn btn-secondary">View Code Portfolio</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

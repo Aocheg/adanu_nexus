@@ -1,56 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional in-home and clinical nursing care services from AdanuNexus.">
-<title>Nursing Care | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional In-Home and Clinical Nursing Care by AdanuNexus — compassionate patient support, elderly care, post-surgical recovery, and chronic disease management.">
+  <meta name="keywords" content="Nursing Care, In-Home Care, Home Healthcare, Elderly Care, Post-Op Care, AdanuNexus">
+  <meta property="og:title" content="Nursing Care Practice | AdanuNexus">
+  <meta property="og:description" content="Compassionate, professional clinical nursing care delivered in your home or healthcare facility with dignity and medical rigor.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Nursing Care Practice | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-nursing"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Nursing Care</h2>
-<p>Compassionate, qualified nursing support — in the home or alongside a care facility.</p>
-</section>
-<main class="container">
+<body class="page-nursing">
 
-<h3>Care Services</h3>
-<ul>
-<li><strong>In-Home Nursing</strong> — routine check-ups, medication management and wound care.</li>
-<li><strong>Elderly Care</strong> — daily living support, mobility assistance and companionship.</li>
-<li><strong>Post-Surgical Care</strong> — recovery monitoring and rehabilitation support.</li>
-<li><strong>Chronic Condition Management</strong> — ongoing support for diabetes, hypertension and similar conditions.</li>
-<li><strong>Health Monitoring</strong> — regular vitals checks and coordination with your physician.</li>
-</ul>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Our Approach</h3>
-<p>Every client receives an individualized care plan built around their specific medical needs, family situation and daily routine. Our nursing staff are licensed professionals who work closely with primary physicians to ensure continuity of care.</p>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
 
-<h3>Getting Started</h3>
-<ul>
-<li>Initial assessment call to understand your needs</li>
-<li>In-person or video consultation with a care coordinator</li>
-<li>A written care plan with schedule and costs</li>
-<li>Ongoing check-ins to adjust care as needs change</li>
-</ul>
-<a class="btn" href="contact.html">Request a Care Assessment</a>
+        <!-- Services Dropdown (Active) -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle active" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item" style="background: var(--surface-alt);">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Request Care</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent active">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Request Care</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#129658; Clinical Standards &bull; Compassionate Care</span>
+      </div>
+      <h2>Compassionate, Professional Nursing Care Built Around You</h2>
+      <p>
+        Whether supporting recovery following surgery, managing chronic health conditions, or providing
+        gentle elderly assistance at home, our licensed nursing staff deliver medical excellence with human warmth.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Book a Care Assessment &rarr;</a>
+        <a href="#services-list" class="btn btn-secondary">Explore Care Lines</a>
+      </div>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Licensed</strong> Professional Nurses</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Doctor</strong> Coordinated Plans</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>100%</strong> Patient Confidentiality</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Flexible</strong> In-Home Scheduling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container" id="services-list">
+
+    <div class="section-head">
+      <span class="section-tag">Clinical Practice</span>
+      <h3 class="section-title">Specialized Nursing Services</h3>
+      <p class="section-sub">
+        Every patient has unique medical and emotional needs. We provide customized care schedules ranging from single clinical visits to full-day dedicated home nursing.
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- 1. In-Home Clinical Nursing -->
+      <div class="card">
+        <span class="card-icon">&#127969;</span>
+        <h4>In-Home Clinical Nursing</h4>
+        <p>Expert clinical care in the comfort of your home: vital signs tracking, wound dressing, catheter management, injection administration, and health monitoring.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Clinical Care at Home</span>
+      </div>
+
+      <!-- 2. Elderly & Geriatric Support -->
+      <div class="card">
+        <span class="card-icon">&#128117;</span>
+        <h4>Elderly Care &amp; Companionship</h4>
+        <p>Respectful daily living assistance for aging family members: mobility support, nutritional guidance, gentle hygiene assistance, and fall prevention.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Dignity &amp; Safety</span>
+      </div>
+
+      <!-- 3. Post-Surgical Recovery -->
+      <div class="card">
+        <span class="card-icon">&#129529;</span>
+        <h4>Post-Surgical Rehabilitation</h4>
+        <p>Short-term and medium-term post-operative care: incision site hygiene, surgical drain tracking, pain assessment, and smooth transition from hospital to home.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Faster Recovery</span>
+      </div>
+
+      <!-- 4. Chronic Disease Management -->
+      <div class="card">
+        <span class="card-icon">&#128170;</span>
+        <h4>Chronic Condition Supervision</h4>
+        <p>Continuous support for hypertension, diabetes blood glucose monitoring, asthma, cardiac care, and proactive prevention of preventable complications.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Proactive Health</span>
+      </div>
+
+      <!-- 5. Medication Administration -->
+      <div class="card">
+        <span class="card-icon">&#128138;</span>
+        <h4>Medication Management</h4>
+        <p>Accurate prescription scheduling, pill sorting, injection oversight, preventing dangerous drug interactions, and updating attending physicians regularly.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Accurate Dosage</span>
+      </div>
+
+      <!-- 6. Respite Care for Families -->
+      <div class="card">
+        <span class="card-icon">&#129309;</span>
+        <h4>Family Respite Relief Care</h4>
+        <p>Scheduled relief care providing primary family caregivers with well-deserved rest, knowing their loved one is in attentive, licensed clinical hands.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Peace of Mind</span>
+      </div>
+    </div>
+
+    <!-- Clinical Standards & Ethics -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Quality Assurance</span>
+      <h3 class="section-title">Our Standards of Clinical Care</h3>
+      <p class="section-sub">Healthcare requires trust, compliance, and clinical rigor. Here is how we safeguard every patient.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-box">
+        <h5>&#128300; Licensed Nurses</h5>
+        <p>All clinical care is administered by registered, verified nursing professionals with up-to-date certifications and emergency preparedness training.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128221; Customized Care Plans</h5>
+        <p>We do not use generic checklists. Every patient receives a tailored Care Plan co-designed with family members and their primary doctor.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128172; Physician Coordination</h5>
+        <p>Our nurses maintain active documentation logs, vitals charts, and coordinate directly with your hospital or private physician.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128272; Strict Medical Confidentiality</h5>
+        <p>All patient medical data, treatment histories, and personal details remain strictly protected under patient confidentiality protocols.</p>
+      </div>
+    </div>
+
+    <!-- How Care is Arranged -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Getting Started</span>
+      <h3 class="section-title">How to Arrange Nursing Care</h3>
+      <p class="section-sub">A simple, caring 4-step process to put the right nursing plan in place quickly.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-icon">1</span>
+        <h4>Initial Consultation</h4>
+        <p>Reach out via phone, WhatsApp, or our online form to discuss your family's health situation and timeline.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">2</span>
+        <h4>Care Assessment</h4>
+        <p>A clinical nurse assesses patient history, current prescriptions, mobility needs, and living environment.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">3</span>
+        <h4>Care Plan &amp; Schedule</h4>
+        <p>We agree on a clear daily or weekly schedule, caregiver allocation, and flat transparent care fees.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">4</span>
+        <h4>Active Support &amp; Updates</h4>
+        <p>Care begins immediately with regular vitals reports and progress reviews shared directly with the family.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--primary); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Need Immediate Nursing Support for a Loved One?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Speak directly with our care coordinator today. We can arrange an initial in-home assessment and start care rapidly.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Request Care Assessment &rarr;</a>
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">&#128172; Chat with Care Coordinator</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

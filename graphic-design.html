@@ -1,54 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Branding, marketing and UI/UX design services from AdanuNexus.">
-<title>Graphic Design | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Graphic Design & Branding by AdanuNexus — brand identity, corporate logos, UI/UX design, marketing collateral, and presentation pitch decks.">
+  <meta name="keywords" content="Graphic Design, Brand Identity, Logo Design, UI/UX Design, Figma, AdanuNexus">
+  <meta property="og:title" content="Graphic Design & Branding | AdanuNexus">
+  <meta property="og:description" content="Distinctive visual identities, intuitive user experiences, and marketing creative that elevates your business.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Graphic Design &amp; Branding | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-design"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Graphic Design</h2>
-<p>Design that makes your brand instantly recognizable and easy to trust.</p>
-</section>
-<main class="container">
+<body class="page-design">
 
-<h3>Design Services.</h3>
-<ul>
-<li><strong>Brand Identity</strong> — logos, color palettes, typography and brand guidelines.</li>
-<li><strong>Marketing Materials</strong> — flyers, brochures, social media graphics and ad creative.</li>
-<li><strong>UI/UX Design</strong> — app and website interfaces focused on usability.</li>
-<li><strong>Print Design</strong> — business cards, packaging and signage.</li>
-<li><strong>Presentation Design</strong> — pitch decks and reports that look professional.</li>
-</ul>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Our Design Process</h3>
-<ul>
-<li>Discovery — understanding your audience and goals</li>
-<li>Concepts — 2–3 initial directions to choose from</li>
-<li>Refinement — revisions based on your feedback</li>
-<li>Delivery — final files in every format you need</li>
-</ul>
-<p>Every project includes source files, so you always own your assets and can hand them to any future team.</p>
-<a class="btn" href="portfolio.html">See Design Work</a>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+        <!-- Services Dropdown (Active) -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle active" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item" style="background: var(--surface-alt);">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Start a Design</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent active">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Start a Design</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#127912; Brand Identity &bull; UI/UX &bull; Creative Direction</span>
+      </div>
+      <h2>Visual Design That Inspires Trust &amp; Drives Conversions</h2>
+      <p>
+        From strategic corporate branding and memorable logo systems to pixel-perfect UI/UX interfaces
+        and marketing collateral — we create designs that give your business authority and instant recognition.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Request Design Quote &rarr;</a>
+        <a href="portfolio.html" class="btn btn-secondary">Explore Design Showcase</a>
+      </div>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>100%</strong> Vector Asset Ownership</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Iterative</strong> Revision Rounds</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Figma</strong> &amp; Adobe Suite Mastery</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Print &amp; Digital</strong> Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <div class="section-head">
+      <span class="section-tag">Design Practice</span>
+      <h3 class="section-title">Design Solutions We Deliver</h3>
+      <p class="section-sub">
+        Every graphic asset is crafted with intentionality — balancing aesthetic elegance with measurable business communication.
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- 1. Brand Identity -->
+      <div class="card">
+        <span class="card-icon">&#128396;&#65039;</span>
+        <h4>Brand Identity &amp; Logo Design</h4>
+        <p>Comprehensive corporate brand systems: primary &amp; secondary logos, custom color schemes, typography hierarchy, and a complete brand guideline document.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Full Brand Guide Included</span>
+      </div>
+
+      <!-- 2. UI/UX Interface Design -->
+      <div class="card">
+        <span class="card-icon">&#128241;</span>
+        <h4>UI/UX Interface &amp; Wireframing</h4>
+        <p>Human-centered user experience design in Figma: wireframes, interactive clickable prototypes, design systems, and responsive desktop/mobile app layouts.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Figma Interactive Specs</span>
+      </div>
+
+      <!-- 3. Marketing & Social Media Kits -->
+      <div class="card">
+        <span class="card-icon">&#128227;</span>
+        <h4>Social Media &amp; Advertising Kits</h4>
+        <p>High-conversion promotional creatives: Instagram carousels, LinkedIn banners, Meta ad visuals, promotional posters, and email newsletter headers.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Optimized for Engagement</span>
+      </div>
+
+      <!-- 4. Print & Corporate Stationery -->
+      <div class="card">
+        <span class="card-icon">&#128196;</span>
+        <h4>Print Collateral &amp; Stationery</h4>
+        <p>Executive business cards, corporate letterheads, official presentation folders, product brochures, flyers, and event signage with print-ready CMYK specs.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; 300 DPI Print-Ready</span>
+      </div>
+
+      <!-- 5. Packaging & Label Design -->
+      <div class="card">
+        <span class="card-icon">&#128230;</span>
+        <h4>Packaging &amp; Product Labels</h4>
+        <p>Distinctive retail packaging, box die-cuts, bottle labels, pouch layouts, and merchandise apparel that stand out on retail shelves and unboxing videos.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; Die-Cut Ready Files</span>
+      </div>
+
+      <!-- 6. Pitch Decks & Presentations -->
+      <div class="card">
+        <span class="card-icon">&#128202;</span>
+        <h4>Pitch Decks &amp; Executive Slides</h4>
+        <p>Investor-ready pitch presentations, corporate annual reports, client proposals, and keynote decks that turn complex data into captivating visual stories.</p>
+        <span class="btn-link" style="color: var(--accent);">&#10004; PowerPoint &amp; PDF</span>
+      </div>
+    </div>
+
+    <!-- Design Guarantee & Deliverables -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Asset Security</span>
+      <h3 class="section-title">The AdanuNexus Creative Guarantee</h3>
+      <p class="section-sub">You receive full ownership of all raw design assets with zero restrictive licensing hurdles.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-box">
+        <h5>&#128190; Complete Source Files</h5>
+        <p>Every project includes all editable source formats: .AI (Adobe Illustrator), .PSD (Photoshop), Figma components, SVG vectors, EPS, and high-res PNG/PDF files.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128274; 100% IP Ownership</h5>
+        <p>Full intellectual property rights are transferred to you upon project sign-off. Your brand assets are yours to use, trademark, and scale worldwide.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#127919; Collaborative Revision</h5>
+        <p>We work closely with your feedback through scheduled review checkpoints so the final result perfectly matches your expectations.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#9889; Production-Ready Export</h5>
+        <p>All print files are delivered in CMYK with bleed margins; all digital assets are delivered in WebP/PNG RGB for instant deployment.</p>
+      </div>
+    </div>
+
+    <!-- Creative Process -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Our Creative Workflow</span>
+      <h3 class="section-title">From Concept to Finished Asset</h3>
+      <p class="section-sub">A structured creative roadmap that turns your ideas into impactful visuals.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-icon">1</span>
+        <h4>Brand Discovery</h4>
+        <p>We analyze your target audience, industry competitors, brand values, and preferred visual aesthetics.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">2</span>
+        <h4>Concept Moodboards</h4>
+        <p>We present 2–3 distinct creative directions and moodboards for your initial input and selection.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">3</span>
+        <h4>Iterative Refinement</h4>
+        <p>We refine the chosen direction, fine-tuning typography, color balances, contrast, and layout details.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">4</span>
+        <h4>Master Delivery</h4>
+        <p>Delivery of your complete digital asset bundle, organized into clear folders with quick-start guides.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Ready to Elevate Your Brand's Visual Identity?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Let's build a visual identity that distinguishes your company in your market. Contact us today for a free design consultation.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Start Your Design Project &rarr;</a>
+        <a href="portfolio.html" class="btn btn-secondary">Browse Design Portfolio</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
