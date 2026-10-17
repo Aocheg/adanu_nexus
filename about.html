@@ -1,53 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Learn about AdanuNexus, our mission, and the team behind our technology and care services.">
-<title>About | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About AdanuNexus — our mission, vision, and multidisciplinary practice combining software development, design, nursing care, and mental health advocacy.">
+  <meta name="keywords" content="About AdanuNexus, Multidisciplinary Studio, Healthcare and Tech, Gabriel Oche Adanu">
+  <meta property="og:title" content="About Us | AdanuNexus">
+  <meta property="og:description" content="Connecting digital engineering and compassionate human care under one roof. Learn about our story, values, and leadership.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>About Us | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-about"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>About AdanuNexus</h2>
-<p>A single organization built on two beliefs: great technology should be accessible, and great care should never be optional.</p>
-</section>
-<main class="container">
+<body class="page-about">
 
-<h3>Our Story</h3>
-<p>AdanuNexus started with a simple observation: businesses need strong technology and design to grow, and people need reliable healthcare and mental health support to thrive — yet these worlds rarely intersect. We built AdanuNexus to close that gap, offering both under one dependable name.</p>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-<h3>Our Mission</h3>
-<p>To deliver high-quality software, design, nursing care and mental health services that genuinely improve how our clients work, live and feel — with honesty, professionalism and care in every engagement.</p>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
 
-<h3>Our Values</h3>
-<ul>
-<li><strong>Integrity</strong> — we do what we say, and we say what's true.</li>
-<li><strong>Craftsmanship</strong> — every project and every patient gets our full attention.</li>
-<li><strong>Compassion</strong> — care is at the center of everything, even in our tech work.</li>
-<li><strong>Accountability</strong> — we measure ourselves by outcomes, not promises.</li>
-</ul>
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
 
-<h3>Our Team</h3>
-<p>Our team is made up of software developers, designers, registered nurses and licensed mental health practitioners working together across disciplines, so every client gets specialist expertise without having to manage multiple vendors.</p>
-<a class="btn" href="services.html">See Our Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Book Consultation</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link active">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Get in Touch</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#128142; Our Purpose &bull; Our Story &bull; Our People</span>
+      </div>
+      <h2>Built on Purpose: Where Innovation Meets Empathy</h2>
+      <p>
+        AdanuNexus is an interdisciplinary practice established on a fundamental truth: organizations thrive when
+        supported by resilient technology, and people flourish when provided compassionate, dignified care.
+      </p>
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Interdisciplinary</strong> Vision</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Licensed</strong> Clinical Background</span>
+        </div>
+        <div class="trust-item">
+          <span>&#10004;</span>
+          <span><strong>Proven</strong> Engineering Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <!-- Section: Our Story & Founding Vision -->
+    <div class="section-head">
+      <span class="section-tag">Origin Story</span>
+      <h3 class="section-title">Why AdanuNexus Exists</h3>
+      <p class="section-sub">
+        Bridging the critical gap between digital progress and human wellbeing.
+      </p>
+    </div>
+
+    <div style="background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 36px; margin-bottom: 40px; box-shadow: var(--shadow-sm); line-height: 1.8;">
+      <p>
+        In modern enterprise, organizations often grapple with fragmented service vendors. A company might hire an outsourced software development firm that fails to understand real human workflows, an agency that creates superficial branding without conversion strategy, or seek independent wellness programs that lack clinical grounding.
+      </p>
+      <p>
+        Meanwhile, individuals and families frequently struggle to find licensed, compassionate healthcare workers who treat home nursing and mental wellbeing with the clinical rigor and empathy they deserve.
+      </p>
+      <p style="margin: 0;">
+        <strong>AdanuNexus was founded by ADANU OCHE GABRIEL</strong> to eliminate these silos. By assembling a coordinated practice of software developers, visual brand designers, registered nurses, and mental health advocates, AdanuNexus provides a single, deeply accountable partner capable of building digital assets and caring for human lives with equal mastery.
+      </p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="pillars-grid">
+      <div class="pillar-box" style="border-top: 4px solid var(--primary);">
+        <h5 style="font-size: 1.2rem; margin-bottom: 10px;">&#127919; Our Mission</h5>
+        <p>
+          To empower businesses with resilient software and compelling visual design, while delivering dignified, compassionate nursing care and accessible mental health support that genuinely elevates everyday lives.
+        </p>
+      </div>
+
+      <div class="pillar-box" style="border-top: 4px solid var(--accent);">
+        <h5 style="font-size: 1.2rem; margin-bottom: 10px;">&#128065;&#65039; Our Vision</h5>
+        <p>
+          To be the leading multidisciplinary studio and care practice recognized across Africa and globally for demonstrating that high-tech digital innovation and heartfelt human-centered care are mutually reinforcing pillars of progress.
+        </p>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="section-head" style="margin-top: 60px;">
+      <span class="section-tag">Core Principles</span>
+      <h3 class="section-title">Values That Guide Everything We Build</h3>
+      <p class="section-sub">Every engagement is governed by four foundational ethics.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-box">
+        <h5>&#129309; Uncompromising Integrity</h5>
+        <p>We believe in absolute transparency: upfront scoping, flat pricing without hidden fees, and honest technical and clinical recommendations.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#9874;&#65039; Rigorous Craftsmanship</h5>
+        <p>Whether optimizing database queries or dressing a post-surgical wound, every detail is executed with precision, clean standards, and pride.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#129505; Human-Centered Empathy</h5>
+        <p>Behind every screen of code is a human user, and behind every medical chart is a person seeking dignity. Empathy is woven into our DNA.</p>
+      </div>
+
+      <div class="pillar-box">
+        <h5>&#128200; Measurable Accountability</h5>
+        <p>We hold ourselves accountable to real outcomes — higher conversions, faster software speeds, smoother patient recoveries, and reduced burnout.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--primary); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Partner With AdanuNexus Today</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Let us put our multidisciplinary expertise to work for your business or family. Contact us today to schedule an initial discovery call.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Schedule a Consultation &rarr;</a>
+        <a href="services.html" class="btn btn-secondary">Explore All Services</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

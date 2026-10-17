@@ -1,60 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Frequently asked questions about AdanuNexus services.">
-<title>FAQ | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about AdanuNexus — learn about pricing, timelines, technology stacks, nursing care standards, and counseling confidentiality.">
+  <meta name="keywords" content="AdanuNexus FAQ, Software Pricing, In-Home Care Questions, Design Revisions, Mental Health Privacy">
+  <meta property="og:title" content="Frequently Asked Questions | AdanuNexus">
+  <meta property="og:description" content="Find quick answers to common questions about our software development, design, nursing care, and mental health services.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Frequently Asked Questions | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-faq"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Frequently Asked Questions</h2>
-<p>Quick answers about how we work across all four service lines.</p>
-</section>
-<main class="container">
+<body class="page-faq">
 
-<div class="faq-item">
-<h4>Do you work with clients remotely?</h4>
-<p>Yes. Software and design projects are handled fully remotely. Nursing and mental health services depend on your location — contact us to check availability in your area.</p>
-</div>
-<div class="faq-item">
-<h4>How much do your services cost?</h4>
-<p>Pricing depends on project scope or care needs. We provide a clear quote after an initial consultation, with no hidden fees.</p>
-</div>
-<div class="faq-item">
-<h4>How long does a typical software or design project take?</h4>
-<p>Simple websites usually take 1–3 weeks; larger applications or full brand packages can take longer. You'll get a timeline before work begins.</p>
-</div>
-<div class="faq-item">
-<h4>Is nursing care available for short-term or long-term needs?</h4>
-<p>Both. We support one-off post-surgical recovery periods as well as ongoing long-term care arrangements.</p>
-</div>
-<div class="faq-item">
-<h4>Are mental health sessions confidential?</h4>
-<p>Yes, all sessions are confidential and handled by licensed practitioners, in line with standard professional and legal confidentiality requirements.</p>
-</div>
-<div class="faq-item">
-<h4>How do I get started?</h4>
-<p>Reach out through our <a href="contact.html">contact page</a> and let us know which service you're interested in — we'll schedule a consultation from there.</p>
-</div>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Book Consultation</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link active">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Get in Touch</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#10067; Help Center &bull; Frequently Asked Questions</span>
+      </div>
+      <h2>Answers to Common Questions</h2>
+      <p>
+        Everything you need to know about partnering with AdanuNexus, our engagement process, pricing transparency, and service standards.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-gold">Still Have Questions? Contact Us &rarr;</a>
+        <a href="services.html" class="btn btn-secondary">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <!-- Category 1: General & Working With Us -->
+    <div class="section-head">
+      <span class="section-tag">General Inquiries</span>
+      <h3 class="section-title">General &amp; Partnership Questions</h3>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How can one organization deliver both software and healthcare services?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>AdanuNexus was structured from day one as a dual-pillar multidisciplinary practice founded by ADANU OCHE GABRIEL. Our digital practice is led by experienced full-stack software engineers and UI/UX designers, while our healthcare practice is staffed by registered, verified nursing professionals and licensed counselors. Each vertical operates strictly within established professional industry standards while benefiting from centralized project management.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you work with remote and international clients?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our software engineering, graphic design, and virtual mental health coaching services cater to clients worldwide across different time zones. In-person clinical nursing is available within our designated regional service coverage areas.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How does pricing and payment work?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>We provide transparent, flat-rate milestone pricing for software and design projects with zero hidden costs. For nursing care, we provide customized daily or monthly care plan rates based on the required hours and clinical intensity. Invoices can be settled via secure bank transfers or online payment processors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Software Development & Tech -->
+    <div class="section-head" style="margin-top: 50px;">
+      <span class="section-tag">Technology Practice</span>
+      <h3 class="section-title">Software Development Questions</h3>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How long does a typical software project take from start to finish?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>A standard high-performance business website typically takes 1 to 3 weeks. Custom web applications, booking portals, or complex database systems range from 4 to 8 weeks depending on the agreed scope. You receive a precise timeline and sprint schedule prior to kick-off.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do I own the source code after project completion?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, 100%. Upon project completion and final sign-off, all source code repository access (on GitHub/GitLab), database credentials, and production deployment keys are handed over directly to you. You retain full intellectual property ownership.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What happens if something breaks after launch?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Every software build includes a complimentary 30-day post-launch warranty period where any bug fixes or minor adjustments are addressed promptly at no extra charge. We also offer ongoing monthly maintenance retainers for continuous support.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: Graphic Design & Branding -->
+    <div class="section-head" style="margin-top: 50px;">
+      <span class="section-tag">Design Practice</span>
+      <h3 class="section-title">Graphic Design &amp; Branding Questions</h3>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What file formats do you deliver for branding and logo projects?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>You receive all professional industry formats: scalable vector files (.AI, .SVG, .EPS), high-resolution web formats (.PNG with transparent background, .WebP), print-ready PDFs (CMYK 300 DPI with bleeds), and clickable Figma design links.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How many revisions are included in a design project?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>We present 2 to 3 distinct visual directions initially, and all our standard packages include up to 3 iterative revision rounds on the selected direction to ensure the final result matches your brand vision perfectly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 4: Healthcare & Nursing Care -->
+    <div class="section-head" style="margin-top: 50px;">
+      <span class="section-tag">Clinical Practice</span>
+      <h3 class="section-title">Nursing Care &amp; Clinical Questions</h3>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your nurses registered and licensed?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. All clinical and in-home patient services are performed by licensed, registered nurses with verified credentials, valid practicing licenses, and regular emergency response retraining.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can care be coordinated with our family doctor or hospital?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Our nurses maintain clinical logs, vitals charts, and medication schedules, routinely sharing clinical progress updates with your attending physician or hospital team to ensure total continuity of care.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 5: Mental Health & Counseling -->
+    <div class="section-head" style="margin-top: 50px;">
+      <span class="section-tag">Wellbeing Practice</span>
+      <h3 class="section-title">Mental Health &amp; Confidentiality Questions</h3>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is my mental health consultation strictly confidential?</span>
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Client confidentiality is our highest ethical obligation. All therapy sessions, personal notes, and correspondence are held under strict therapeutic privacy guidelines. Information is never disclosed to employers or third parties without explicit written consent.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: var(--radius-md); padding: 36px; margin: 50px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Have a Specific Question Not Listed Here?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Reach out directly to our team. We respond within 12 business hours with straightforward, honest answers.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Contact Us Directly &rarr;</a>
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">&#128172; Ask on WhatsApp</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>

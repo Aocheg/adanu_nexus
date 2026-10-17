@@ -1,46 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free guides and resources from AdanuNexus across technology, design and health topics.">
-<title>Resources | AdanuNexus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free toolkits, checklists, and planning guides from AdanuNexus — website scopes, brand style guide templates, home nursing checklists, and wellness tools.">
+  <meta name="keywords" content="AdanuNexus Resources, Website Checklist, Brand Guide Template, Home Nursing Checklist, Wellness Assessment">
+  <meta property="og:title" content="Free Guides &amp; Resources | AdanuNexus">
+  <meta property="og:description" content="Download free professional toolkits and planning checklists for software projects, brand design, and healthcare coordination.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/adanunexus-logo.png">
+  <title>Free Guides &amp; Resources | AdanuNexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/adanunexus-icon.png">
 </head>
-<body class="page-resources"><header>
-<div class="container header-inner">
-<img src="assets/adanunexus-logo.png" alt="AdanuNexus logo" class="header-logo">
-<p class="header-tagline">Connecting Technology, Creativity, Healthcare &amp; Wellbeing</p>
-</div>
-<div class="container">
-<nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="software-development.html">Software Development</a> | <a href="graphic-design.html">Graphic Design</a> | <a href="nursing-care.html">Nursing Care</a> | <a href="mental-health.html">Mental Health</a> | <a href="portfolio.html">Portfolio</a> | <a href="blog.html">Blog</a> | <a href="resources.html">Resources</a> | <a href="testimonials.html">Testimonials</a> | <a href="faq.html">FAQ</a> | <a href="contact.html">Contact</a></nav>
-</div>
-</header>
-<section class="hero">
-<h2>Free Resources</h2>
-<p>Guides and tools to help you make informed decisions, whether you're planning a project or supporting your health.</p>
-</section>
-<main class="container">
+<body class="page-resources">
 
-<h3>Guides & Downloads</h3>
-<ul>
-<li><strong>Website Planning Checklist</strong> — what to prepare before starting a build.</li>
-<li><strong>Brand Style Guide Template</strong> — a starting point for documenting your brand.</li>
-<li><strong>Home Care Readiness Checklist</strong> — questions to ask before arranging in-home nursing.</li>
-<li><strong>Stress & Wellbeing Self-Check</strong> — a simple self-assessment tool (not a diagnosis).</li>
-</ul>
-<h3>External Support</h3>
-<p>If you need immediate mental health support, please contact a licensed local provider or crisis line in your area — this resource page is informational only and not a substitute for professional care.</p>
-<a class="btn" href="contact.html">Ask Us a Question</a>
+  <!-- ===== Site Header ===== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="AdanuNexus Home">
+        <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="header-logo">
+        <div class="brand-text">
+          <span class="brand-name">Adanu<span>Nexus</span></span>
+          <span class="header-tagline">Technology, Creativity &amp; Care</span>
+        </div>
+      </a>
 
-</main>
-<footer>
-<p>&copy; 2026 AdanuNexus. All Rights Reserved. | <a href="contact.html">Contact us</a></p>
-</footer>
-<script src="js/script.js"></script>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            Services <span class="arrow">&#9662;</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="software-development.html" class="dropdown-item">
+              <span class="item-title">&#128187; Software Development</span>
+              <span class="item-desc">Web apps, custom software &amp; scalable digital platforms</span>
+            </a>
+            <a href="graphic-design.html" class="dropdown-item">
+              <span class="item-title">&#127912; Graphic Design</span>
+              <span class="item-desc">Brand identity, UI/UX &amp; marketing visual design</span>
+            </a>
+            <a href="nursing-care.html" class="dropdown-item">
+              <span class="item-title">&#129658; Nursing Care</span>
+              <span class="item-desc">Compassionate clinical &amp; in-home patient support</span>
+            </a>
+            <a href="mental-health.html" class="dropdown-item">
+              <span class="item-title">&#129504; Mental Health</span>
+              <span class="item-desc">Counseling, wellness coaching &amp; stigma-free advocacy</span>
+            </a>
+            <div class="dropdown-footer">
+              <a href="services.html">View All Services &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-gold btn-header">Book Consultation</a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="drawer-logo">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+
+      <div class="drawer-group">
+        <span class="drawer-group-title">Services</span>
+        <a href="software-development.html" class="drawer-link indent">&#128187; Software Development</a>
+        <a href="graphic-design.html" class="drawer-link indent">&#127912; Graphic Design</a>
+        <a href="nursing-care.html" class="drawer-link indent">&#129658; Nursing Care</a>
+        <a href="mental-health.html" class="drawer-link indent">&#129504; Mental Health</a>
+        <a href="services.html" class="drawer-link indent">View Overview &rarr;</a>
+      </div>
+
+      <a href="portfolio.html" class="drawer-link">Portfolio</a>
+      <a href="blog.html" class="drawer-link">Blog &amp; Insights</a>
+      <a href="resources.html" class="drawer-link active">Resources</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="faq.html" class="drawer-link">FAQ</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="contact.html" class="btn btn-gold btn-block">Get in Touch</a>
+    </div>
+  </aside>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span>&#128196; Practical Toolkits &bull; 100% Free</span>
+      </div>
+      <h2>Free Planning Guides &amp; Checklists</h2>
+      <p>
+        Complimentary resources developed by our software architects, designers, and healthcare clinicians
+        to help you make informed decisions before initiating your project or care plan.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Main Content Area ===== -->
+  <main class="container">
+
+    <div class="section-head">
+      <span class="section-tag">Planning Toolkits</span>
+      <h3 class="section-title">Checklists &amp; Templates</h3>
+      <p class="section-sub">Use these frameworks to clarify requirements, avoid common pitfalls, and save time.</p>
+    </div>
+
+    <div class="grid">
+      <!-- Resource 1 -->
+      <div class="card">
+        <span class="card-icon">&#128187;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Web Development</span>
+        <h4>Website Project Scoping Checklist</h4>
+        <p>A step-by-step checklist of assets, page structures, domain requirements, and payment gateways needed before commissioning a custom web project.</p>
+        <a href="contact.html?ref=web-checklist" class="btn-link">Request Free Copy &rarr;</a>
+      </div>
+
+      <!-- Resource 2 -->
+      <div class="card">
+        <span class="card-icon">&#127912;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Brand Design</span>
+        <h4>Brand Identity Briefing Framework</h4>
+        <p>A structured questionnaire to define your company's core aesthetic, target demographic, competitor differentiation, and primary visual deliverables.</p>
+        <a href="contact.html?ref=brand-framework" class="btn-link">Request Free Copy &rarr;</a>
+      </div>
+
+      <!-- Resource 3 -->
+      <div class="card">
+        <span class="card-icon">&#129658;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">In-Home Healthcare</span>
+        <h4>Home Care Readiness Assessment Guide</h4>
+        <p>Vital questions to consider before arranging in-home clinical nursing: emergency contact trees, room safety adjustments, and daily medication logs.</p>
+        <a href="contact.html?ref=care-guide" class="btn-link">Request Free Copy &rarr;</a>
+      </div>
+
+      <!-- Resource 4 -->
+      <div class="card">
+        <span class="card-icon">&#129504;</span>
+        <span style="font-size: 0.74rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 6px;">Mental Health</span>
+        <h4>Workplace Stress &amp; Burnout Self-Check</h4>
+        <p>An evidence-informed reflective self-assessment tool for teams and individuals to identify early burnout symptoms and promote emotional wellbeing.</p>
+        <a href="contact.html?ref=wellness-check" class="btn-link">Request Free Copy &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Crisis Information -->
+    <div style="background: #FFF7ED; border: 2px solid #FDBA74; border-radius: var(--radius-md); padding: 26px 30px; margin: 50px 0 30px; display: flex; align-items: flex-start; gap: 18px;">
+      <span style="font-size: 2rem; line-height: 1;">&#9888;&#65039;</span>
+      <div>
+        <h4 style="color: #9A3412; font-size: 1.15rem; margin-bottom: 6px;">Important Healthcare &amp; Legal Notice</h4>
+        <p style="color: #7C2D12; font-size: 0.94rem; margin: 0; line-height: 1.6;">
+          All downloadable toolkits and checklists provided on this page are intended for general planning and informational purposes only. They do not constitute formal medical diagnosis, psychiatric treatment, or legal contracts. For individualized clinical assessments, please consult directly with our registered healthcare clinicians.
+        </p>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <div style="background: var(--paper); border: 1px solid var(--line); border-left: 6px solid var(--primary); border-radius: var(--radius-md); padding: 36px; margin: 40px 0 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; box-shadow: var(--shadow-sm);">
+      <h4 style="font-size: 1.4rem; color: var(--primary-dark); margin: 0;">Need Personalized Assistance With a Template?</h4>
+      <p style="margin: 0; color: var(--ink-soft); max-width: 720px;">
+        Our team can walk you through any checklist during a free 20-minute discovery consultation.
+      </p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+        <a href="contact.html" class="btn btn-gold">Schedule a Discovery Call &rarr;</a>
+        <a href="services.html" class="btn btn-secondary">Explore All Services</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== Site Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/adanunexus-logo.png" alt="AdanuNexus Logo" class="footer-logo">
+          <p class="footer-bio">
+            AdanuNexus is a premier multidisciplinary studio bridging digital innovation and compassionate human care. We engineer resilient technology and deliver trusted healthcare support built around people.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="graphic-design.html">Graphic Design &amp; UI/UX</a></li>
+            <li><a href="nursing-care.html">In-Home Nursing Care</a></li>
+            <li><a href="mental-health.html">Mental Health Advocacy</a></li>
+            <li><a href="services.html">All Services Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About AdanuNexus</a></li>
+            <li><a href="portfolio.html">Featured Portfolio</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+            <li><a href="blog.html">Articles &amp; Insights</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:oche8004@gmail.com">oche8004@gmail.com</a></li>
+            <li><strong>Support:</strong> <a href="contact.html">Online Inquiry Form</a></li>
+            <li><strong>Availability:</strong> Mon &ndash; Sat, 8:00 AM &ndash; 6:00 PM</li>
+            <li><strong>Consultation:</strong> Confidential &amp; Free 20-min Call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AdanuNexus. All Rights Reserved. Crafted with care and purpose.</p>
+        <p><a href="contact.html">Get in Touch</a> &bull; <a href="faq.html">Help Center</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick-Chat Button -->
+  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <span>&#128172;</span>
+    <span class="whatsapp-label">Chat with Us</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
