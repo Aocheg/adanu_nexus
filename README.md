@@ -62,17 +62,17 @@ The website uses a bespoke luxury color system balancing deep forest greens, war
 
 ---
 
-## 🚀 Deployment Instructions
+## 🚀 Deployment Instructions.
 
 The codebase is 100% static (HTML, CSS, JS, assets) and requires no build step (`npm run build`), making it instantly deployable anywhere:
 
-### 1. GitHub Pages (Free)
+### 1. GitHub Pages (Free).
 1. Push this repository to GitHub: `git push origin main`.
 2. In your GitHub repository, navigate to **Settings** &rarr; **Pages**.
 3. Under **Branch**, select `main` and root folder `/ (root)`.
 4. Click **Save**. Your site will be live at `https://aocheg.github.io/adanu_nexus/`.
 
-### 2. Vercel
+### 2. Vercel.
 1. Log in to [Vercel](https://vercel.com) using your GitHub account.
 2. Click **Add New** &rarr; **Project** &rarr; Select `adanu_nexus`.
 3. Leave build settings default (Framework preset: `Other`).
@@ -92,7 +92,7 @@ The codebase is 100% static (HTML, CSS, JS, assets) and requires no build step (
 
 ---
 
-## 📬 Contact & Maintainer
+## 📬 Contact & Maintainer.
 
 - **Founder & Lead Maintainer:** ADANU OCHE GABRIEL
 - **Email:** [oche8004@gmail.com](mailto:oche8004@gmail.com)
