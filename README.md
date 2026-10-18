@@ -5,7 +5,7 @@
 
 ---
 
-## 🌟 Overview
+## 🌟 Overview.
 
 **AdanuNexus** is a premier multidisciplinary platform designed to eliminate silos between modern digital engineering and compassionate healthcare support. The website is an ultra-fast, mobile-first static web application built with clean semantic HTML5, modern CSS3 variables, and lightweight vanilla ES6+ JavaScript.
 
@@ -13,7 +13,7 @@ Live Repository: `https://github.com/Aocheg/adanu_nexus.git`
 
 ---
 
-## 🏛️ Site Architecture & Navigation Map
+## 🏛️ Site Architecture & Navigation Map.
 
 The website features 13 dedicated, inter-linked pages with unified header navigation, services dropdown, mobile off-canvas drawer, floating WhatsApp quick-chat, and 4-column footer:
 
